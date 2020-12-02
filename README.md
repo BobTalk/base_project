@@ -68,3 +68,6 @@ deleteBtn: [
 > .eslintrc.js eslint校验规则配置文件
 >
 > vue.config.js webpack暴露出来的配置文件
+
+----------------------------------
+项目中所用CSS预编译`stylus`
