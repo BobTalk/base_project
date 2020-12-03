@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
-  <keep-alive v-if="isKeepAlive">
-     <router-view/>
-  </keep-alive>
-  <template v-else>
-    <router-view/>
-  </template>
-  </div>
+	<div id="app">
+		<keep-alive v-if="isKeepAlive">
+			<router-view />
+		</keep-alive>
+		<template v-else>
+			<router-view />
+		</template>
+	</div>
 </template>
 <script>
 export default {

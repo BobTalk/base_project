@@ -67,7 +67,9 @@ deleteBtn: [
 >
 > .eslintrc.js eslint校验规则配置文件
 >
+> .editorConfig.js vscode编译器需要安装<EditorConfig>插件 Webstorm、IntelliJIDEA等不需要
+>
 > vue.config.js webpack暴露出来的配置文件
 
 ----------------------------------
-项目中所用CSS预编译`stylus`
+项目中所用CSS预编译`stylus` 可根据实际情况选取对应的`CSS`预编译

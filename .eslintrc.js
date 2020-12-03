@@ -5,13 +5,13 @@ module.exports = {
     node: true,
     es6: true
   },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/standard'
-  ],
   parserOptions: {
     parser: 'babel-eslint'
-  },
+	},
+	// 	全局变量 writable readonly
+	globals: {},
+	// eslint-plugin-react eslint-plugin-babel
+	plugins:['babel','prettier'],
   rules: {
     "vue/max-attributes-per-line": [2, {
       "singleline": 10,
@@ -155,6 +155,12 @@ module.exports = {
     "prefer-const": 0,//首选const
     "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0,
     "object-curly-spacing":  [0, "never"],//大括号内是否允许不必要的空格
-    "array-bracket-spacing": [2, "never"]//是否允许非空数组里面有多余的空格
-  }
+		"array-bracket-spacing": [2, "never"],//是否允许非空数组里面有多余的空格
+		"prettier/prettier": 0
+	},
+	extends: [
+    'plugin:vue/essential',
+		'@vue/standard',
+		'plugin:prettier/recommended'
+  ]
 }

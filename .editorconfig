@@ -1,5 +1,15 @@
+# http://editorconfig.org
+root = true
+charset = utf-8
 [*.{js,jsx,ts,tsx,vue}]
-indent_style = space
+# 缩进符
+indent_style = tab
+# 用两个空格代替制表符；
 indent_size = 2
+# 在文件结尾添加一个空白行；
 trim_trailing_whitespace = true
+# 在文件结尾添加一个空白行；
 insert_final_newline = true
+# 在保存时删除尾部的空白字符； lf 结尾是 \n \r \n\r auto
+end_of_line = lf
+
