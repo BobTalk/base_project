@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve --mode dev",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "reInstall": "rimraf node_modules && npm install"
+    "reInstall": "rimraf node_modules && npm install",
+    "deploy:dev": "npm run build:dev && cross-env NODE_ENV=development node ./deploy"
   },
   "dependencies": {
     "axios": "^0.21.0",
